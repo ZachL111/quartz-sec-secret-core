@@ -1,0 +1,10 @@
+{
+  "name": "zachl111/quartz-sec-secret-core",
+  "description": "Implement a PHP security tooling project for secret visual model generation, using layout fixtures and stable geometry snapshots.",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Portfolio\\": "src/"
+    }
+  }
+}

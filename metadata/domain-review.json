@@ -1,0 +1,73 @@
+{
+  "repo": "quartz-sec-secret-core",
+  "language": "PHP",
+  "category": "Security tooling",
+  "goal": "Implement a PHP security tooling project for secret visual model generation, using layout fixtures and stable geometry snapshots.",
+  "review_model": {
+    "terms": [
+      "trust boundary",
+      "claim drift",
+      "replay exposure",
+      "policy width"
+    ],
+    "lanes": [
+      "ship",
+      "watch",
+      "hold"
+    ],
+    "score": "signal * 2 + slack + confidence - drag * 3",
+    "purpose": "surface the domain-specific cases that need the most careful review"
+  },
+  "cases": [
+    {
+      "name": "baseline",
+      "focus": "trust boundary",
+      "signal": 79,
+      "slack": 54,
+      "drag": 25,
+      "confidence": 73,
+      "score": 210,
+      "lane": "ship"
+    },
+    {
+      "name": "stress",
+      "focus": "claim drift",
+      "signal": 68,
+      "slack": 44,
+      "drag": 14,
+      "confidence": 89,
+      "score": 227,
+      "lane": "ship"
+    },
+    {
+      "name": "edge",
+      "focus": "replay exposure",
+      "signal": 85,
+      "slack": 28,
+      "drag": 19,
+      "confidence": 81,
+      "score": 222,
+      "lane": "ship"
+    },
+    {
+      "name": "recovery",
+      "focus": "policy width",
+      "signal": 59,
+      "slack": 42,
+      "drag": 15,
+      "confidence": 54,
+      "score": 169,
+      "lane": "ship"
+    },
+    {
+      "name": "stale",
+      "focus": "trust boundary",
+      "signal": 89,
+      "slack": 43,
+      "drag": 12,
+      "confidence": 59,
+      "score": 244,
+      "lane": "ship"
+    }
+  ]
+}
